@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "transformer-experiments"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "transformer_experiments"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+flax = "^0.6.4"
+ipykernel = "^6.21.2"
+notebook = "^6.5.2"
+tensorflow = "^2.11.0"
+black = "^23.1.0"
+clu = "^0.0.8"
+
+
+[tool.poetry.group.dev.dependencies]
+tensorflow-datasets = "^4.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
